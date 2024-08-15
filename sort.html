@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ソート・絞り込み練習 </title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="center">
+            <section class="sectionStyle">
+                <h2>課題 1: オブジェクト配列の数値ソート</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="年齢でソート" id="agebtn" class="btnmrg">
+                        <select name="list" id="agelist" size="1">
+                            <option value="ageasc">年齢(昇順)</option>
+                            <option value="agedesc">年齢(降順)</option>
+                        </select>
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ageput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 2: オブジェクト配列の文字列ソート</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="名前でソート" id="namebtn" class="btnmrg">
+                        <select name="list" id="namelist" siza="1">
+                            <option value="nameasc">名前(昇順)</option>
+                            <option value="namedesc">名前(降順)</option>
+                        </select>
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="nameput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 3: 特定の年齢以上の絞り込み</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="30歳以上" id="agethirty" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="thirtyput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 4: 特定の名前を含むオブジェクトの絞り込み</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="名前にoがある人" id="obtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="oput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 5: 年齢の範囲での絞り込み</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="25歳以上35歳以下" id="allbtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="allput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 6: 名前の長さでのソート</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="文字数が少ない順" id="littlebtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="littleput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 7: 年齢が最も若い人物の特定</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="最も若い人物を特定して表示" id="youngbtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="youngput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 8: 年齢が最も高い人物の特定</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="最も高い人物を特定して表示" id="oldbtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="oldput"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 9: 年齢の合計を計算</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="全人物の年齢の合計" id="totalbtn" class="btnmrg">
+                        <input type="text" id="totalput">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="totaltable"></tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="sectionStyle">
+                <h2>課題 10: 特定の人物を削除</h2>
+                <div class="centerIn">
+                    <div class="flex1">
+                        <input type="button" value="特定の人物を削除" id="deletebtn" class="btnmrg">
+                    </div>
+                    <table class="tablestyle">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="deletetable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </body>
+    <script src="js/script01.js"></script>
+    <script src="js/script02.js"></script>
+    <script src="js/script03.js"></script>
+    <script src="js/script04.js"></script>
+    <script src="js/script05.js"></script>
+    <script src="js/script06.js"></script>
+    <script src="js/script07.js"></script>
+    <script src="js/script08.js"></script>
+    <script src="js/script09.js"></script>
+    <script src="js/script10.js"></script>
+</html>

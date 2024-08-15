@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.center {
+  text-align: center;
+  margin: 0 auto;
+  width: 650px;
+}
+
+.centerIn {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-grid;
+}
+
+.sectionStyle {
+  border-bottom: 3px solid #444;
+  padding-bottom: 15px;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.flex1 .btnmrg {
+  margin-right: 5px;
+}
+
+.tablestyle {
+  margin-top: 10px;
+}
+
+.tablestyle thead {
+  background-color: #444;
+}
+
+.tablestyle thead tr th {
+  color: white;
+}
+
+.tablestyle thead,
+td,
+th {
+  border: solid 1px #444;
+  width: 100px;
+  text-align: center;
+}
